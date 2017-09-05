@@ -14,9 +14,9 @@ with ’A’) to each Tetriminos in the order they appear in the file. A file wi
 Tetriminos maximum.
 
 A few examples of valid descriptions of Tetriminos :
-.... 	
-..## 		
-..#. 		
+....
+..##
+..#.
 ..#. 		
 
 .... 		
