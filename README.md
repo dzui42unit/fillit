@@ -14,58 +14,68 @@ with ’A’) to each Tetriminos in the order they appear in the file. A file wi
 Tetriminos maximum.
 
 A few examples of valid descriptions of Tetriminos :
-* .... 		.... 		####
-* ..## 		.... 		....
-* ..#. 		..## 		....
-* ..#. 		..## 		....
+* .... 	
+* ..## 		
+* ..#. 		
+* ..#. 		
+
+* .... 		
+* .... 		
+* ..## 	
+* ..## 
+
+* ####
+* ....
+* ....
+* ....
 
 an example of a valid file a program must resolve :
 $> cat -e valid_sample.fillit
-...#$
-...#$
-...#$
-...#$
+* ...#$
+* ...#$
+* ...#$
+* ...#$
 $
-....$
-....$
-....$
-####$
+* ....$
+* ....$
+* ....$
+* ####$
 $
-.###$
-...#$
-....$
-....$
+* .###$
+* ...#$
+* ....$
+* ....$
 $
-....$
-..##$
-.##.$
-....$
+* ....$
+* ..##$
+* .##.$
+* ....$
 $>
 
 Example how the program works:
 $> cat sample.fillit | cat -e
-....$
-##..$
-.#..$
-.#..$
+* ....$
+* ##..$
+* .#..$
+* .#..$
 $
-....$
-####$
-....$
-....$
+* ....$
+* ####$
+* ....$
+* ....$
 $
-#...$
-###.$
-....$
-....$
-$
-....$
-##..$
-.##.$
-....$
+* #...$
+* ###.$
+* ....$
+* ....$
+* $
+* ....$
+* ##..$
+* .##.$
+* ....$
 $> ./fillit sample.fillit | cat -e
-DDAA$
-CDDA$
-CCCA$
-BBBB$
-$>
+* DDAA$
+* CDDA$
+* CCCA$
+* BBBB$
+* $>
